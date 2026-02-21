@@ -1,0 +1,13 @@
+name: Flutter CI
+on: [push, pull_request] # Se activa con cada subida de código
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          [cite_start]flutter-version: '3.x' # Versión de tu SDK 
+      - [cite_start]run: flutter pub get [cite: 26, 97]
+      - [cite_start]run: flutter test [cite: 96, 113]
